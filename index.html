@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Утиный Рай</title>
+
+    <!--Подключения---------------------------------------------------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" />
+
+<body>
+    <!--Навигация------------------------------------------------------------------------------------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-duck me-2 fs-3"></i> 🦆Утиный Рай
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#catalog">Продукция</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Галерея</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews">Отзывы</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                </ul>
+                <div class="d-flex align-items-center gap-2">
+                    <span id="cart-count" class="badge bg-danger rounded-pill px-2 py-1">0</span>
+                    <a href="#" class="btn btn-warning rounded-pill">Заказать</a>
+                    <button id="theme-toggle" class="btn btn-outline-light btn-sm rounded-pill" type="button">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Hero секция-------------------------------------------------------------------------------------------------------------->
+    <header id="hero" class="hero-section position-relative overflow-hidden">
+        <div class="hero-gradient position-absolute w-100 h-100"
+            style="background: linear-gradient(135deg, #f0460d 0%, #FFC107 100%); opacity: 0.8;"></div>
+
+        <div class="container z-2 position-relative">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 pe-lg-5">
+                    <h1 class="display-3 fw-bold text-white">
+                        Резиновые уточки, которых полюбит вся семья
+                    </h1>
+                    <p class="lead text-white-50">
+                        Безопасные, яркие и невероятно милые — наши уточки созданы с
+                        любовью к детям и заботой о природе.
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex">
+                        <a href="#catalog" class="btn btn-light rounded-pill px-4 shadow-sm">
+                            Смотреть каталог
+                        </a>
+                        <a href="#contacts" class="btn btn-warning rounded-pill px-4 shadow-sm">
+                            Связаться с нами
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--Преимущества-------------------------------------------------------------------------------------------------------------->
+    <section id="about" class="py-5 bg-light">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4"></div>
+        <div class="container">
+            <h2 class="text-center mb-5">Почему выбирают нас</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4" data-section="advantages">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+                            <div class="icon-box text-primary mb-3">
+                                <i class="bi bi-shield-check-fill fs-3"></i>
+                            </div>
+                            <h4 class="card-title"> 🦆 Безопасный материал</h4>
+                            <p class="card-text text-muted">
+                                Пищевой ПВХ без вредных добавок — безопасно даже для малышей.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+                            <div class="icon-box text-success mb-3">
+                                <i class="bi bi-recycle-fill fs-3"></i>
+                            </div>
+                            <h4 class="card-title">♻️ Экологично</h4>
+                            <p class="card-text text-muted">
+                                Перерабатываемые материалы и бережное производство.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+                            <div class="icon-box text-warning mb-3">
+                                <i class="bi bi-palette-fill fs-3"></i>
+                            </div>
+                            <h4 class="card-title">🎨 50+ расцветок</h4>
+                            <p class="card-text text-muted">
+                                На любой вкус: от классических до самых ярких.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4">
+                        <div class="card-body p-4">
+                            <div class="icon-box text-info mb-3">
+                                <i class="bi bi-truck-front-fill fs-3"></i>
+                            </div>
+                            <h4 class="card-title">🚚 Доставка по всей России</h4>
+                            <p class="card-text text-muted">
+                                Доставим в любой город быстро и надёжно.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Каталог продукции-------------------------------------------------------------------------------------------------------------->
+    <section id="catalog" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Каталог продукции</h2>
+            <div class="row g-4" data-section="catalog">
+                <!-- Товар 1 ---------------------------------------------------------------------------------------------------------------->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm rounded-4 border-0">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSDi8hy8nl4HklhrkXzG0UrInePSgtBeHpNN7Of0x9kQ&s"
+                            alt="Уточка Классика" class="card-img-top rounded-4" loading="lazy" />
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark rounded-pill me-2">Хит</span>
+                            <h5 class="card-title">Военный</h5>
+                            <p class="card-text text-muted small">
+                                Традиционная жёлтая уточка — символ детства.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <strong class="fs-5 text-primary">399 ₽</strong>
+                                <button class="btn btn-primary rounded-pill btn-sm add-to-cart" data-price="399">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Товар 2 ---------------------------------------------------------------------------------------------------------------->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm rounded-4 border-0">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMhz2h2hv8AGUu19SGL1T8nJnb2R3Rw_byoCcLhq7Jog&s=10"
+                            alt="Уточка Пират" class="card-img-top rounded-4" loading="lazy" />
+                        <div class="card-body">
+                            <span class="badge bg-success text-dark rounded-pill me-2">Новинка</span>
+                            <h5 class="card-title">Бандит</h5>
+                            <p class="card-text text-muted small">
+                                С повязкой и саблей — для юных капитанов.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <strong class="fs-5 text-primary">449 ₽</strong>
+                                <button class="btn btn-primary rounded-pill btn-sm add-to-cart" data-price="449">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Товар 3 ---------------------------------------------------------------------------------------------------------------->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm rounded-4 border-0">
+                        <img src="https://images.firma-gamma.ru/images/5/6/d36639273692l.jpg" alt="Уточка Единорог"
+                            class="card-img-top rounded-4" loading="lazy" />
+                        <div class="card-body">
+                            <span class="badge bg-danger text-white rounded-pill me-2">-50%</span>
+                            <h5 class="card-title">Класический</h5>
+                            <p class="card-text text-muted small">
+                                Волшебная уточка с радужной гривой.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <strong class="fs-5 text-primary">399 ₽ <del
+                                        class="text-muted text-decoration-line-through">749 ₽</del></strong>
+                                <button class="btn btn-primary rounded-pill btn-sm add-to-cart" data-price="599">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Товар 4 ---------------------------------------------------------------------------------------------------------------->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm rounded-4 border-0">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMhz2h2hv8AGUu19SGL1T8nJnb2R3Rw_byoCcLhq7Jog&s=10"
+                            alt="Уточка Классика" class="card-img-top rounded-4" loading="lazy" />
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark rounded-pill me-2">Хит</span>
+                            <h5 class="card-title">Бандит</h5>
+                            <p class="card-text text-muted small">
+                                Традиционная жёлтая уточка — символ детства.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <strong class="fs-5 text-primary">199 ₽</strong>
+                                <button class="btn btn-primary rounded-pill btn-sm add-to-cart" data-price="399">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Товар 5 ---------------------------------------------------------------------------------------------------------------->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm rounded-4 border-0">
+                        <img src="https://images.firma-gamma.ru/images/5/6/d36639273692l.jpg" alt="Уточка Классика"
+                            class="card-img-top rounded-4" loading="lazy" />
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark rounded-pill me-2">Хит</span>
+                            <h5 class="card-title">Классика</h5>
+                            <p class="card-text text-muted small">
+                                Традиционная жёлтая уточка — символ детства.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <strong class="fs-5 text-primary">99 ₽</strong>
+                                <button class="btn btn-primary rounded-pill btn-sm add-to-cart" data-price="399">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Товар 6 ---------------------------------------------------------------------------------------------------------------->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm rounded-4 border-0">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSIzDT9rdQHTut8nP2Yv4_5xdUvqL_k56KP8p6fC6prQ&s=10"
+                            alt="Уточка Классика" class="card-img-top rounded-4" loading="lazy" />
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark rounded-pill me-2">Хит</span>
+                            <h5 class="card-title">Минион</h5>
+                            <p class="card-text text-muted small">
+                                Традиционная жёлтая уточка — символ детства.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <strong class="fs-5 text-primary">299 ₽</strong>
+                                <button class="btn btn-primary rounded-pill btn-sm add-to-cart" data-price="399">
+                                    В корзину
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Галерея------------------------------------------------------------------------------------------------------------------>
+                <div class="container">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4">
+                            <img class="w-100"
+                                src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRiIwyEB5hJ5jxRc3MADKXv4Usk_Zh3kH4U0YO0X73_o8kcJdaGumA15wQx1VukvNUgjTeaBSUITPocL_s34geTGAJVaE7sRYaVy2L8rrItLLqb5XmtELBm">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img class="w-100"
+                                src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR6Uq2Z58bj0JcFIzMneUMc_2OI7sTcb18IjwCluw86gIVZwckn2V_SCaZZLt-3O9r1lNC7lA9XWCeCUFVzsZO5MOeO9zPKmWuhCuj8L6j32tFijVk9UTqy">
+                        </div>
+                        <div class="col-6 col-md-4">
+                            <img class="w-100"
+                                src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQFFcF-OxuA7HOAOaeJn0A0EQWrAGdE6nbFytcZJg1hxPocx0-vprQA6rJ15epU3b3wAgoh6t4C7Q1KSzEcowhQWLE2Hf5F1Yf48H1c3UAuxbLAlya7QVsS">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Отзывы------------------------------------------------------------------------------------------------------------------>
+            <div class="carousel" <div id="carouselExampleDark" class="carousel carousel-dark slide"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="https://forum.cs-cart.ru/uploads/default/original/3X/1/2/12d19ea560e6499a9b725aea81f72e8c098686e4.png"
+                            class="d-block w-100" alt="Первая">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Подборка отзыво</h5>
+                            <p>Самый лучшие пользователи нашего товара.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="https://retscorp.ru/uploads/posts/2018-10/1540504852_customer-reviews-on-the-site-14.jpg"
+                            class="d-block w-100" alt="Вторая">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Подборка отзыво</h5>
+                            <p>Самый лучшие пользователи нашего товара.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static.tildacdn.com/tild3935-6439-4764-a331-653364373030/__2024-06-19__204000.png"
+                            class="d-block w-100" alt="Третья">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Подборка отзывов</h5>
+                            <p>Самый лучшие пользователи нашего товара.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Дальше</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Назад</span>
+                </button>
+            </div>
+
+            <!--форма-------------------------------------------------------------------------------------------------------------------->
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Никита" required>
+                    <div class="valid-feedback">
+                        Отлично
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <label id="inputGroupPrepend">Почта</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        <input type="email" class="form-control" id="validationCustom02" placeholder="@gmail.com"
+                            required>
+                        <div class="valid-feedback">
+                            Отлично!
+
+                        </div>
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите свое имя.
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-4">
+                    <label for="validationCustomUsername" class="form-label">Телефон</label>
+                    <div class="input-group has-validation">
+                        <span class="input-group-text" id="inputGroupPrepend">+</span>
+                        <input type="text" class="form-control" id="validationCustomUsername"
+                            aria-describedby="inputGroupPrepend" required>
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите свое имя.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationCustom03" class="form-label">Комментрайи</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Пожалуйста,добавьте Комментрайи.
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label for="validationCustom04" class="form-label">Колличество</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Колличество</option>
+                        <option>
+                            1-5
+                            5-10
+                            10-15
+                            15-20
+                        </option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Отлично!
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Принять условия и положения.
+                        </label>
+                        <div class="invalid-feedback">
+                            Вы должны дать согласие перед отправкой.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Отправить.</button>
+                </div>
+            </form>
+
+            <!--Футер-------------------------------------------------------------------------------------------------------------------------------------------------->
+            <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+
+                <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+                    <div class="me-5 d-none d-lg-block">
+                        <span>Подписывайтесь на нас в соцсетях:</span>
+                    </div>
+
+
+
+                    <div>
+                        <a href="#" class="me-4 text-reset" title="Telegram">
+                            <i class="bi bi-telegram fs-5"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset" title="VK">
+                            <i class="bi bi-vk fs-5"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset" title="YouTube">
+                            <i class="bi bi-youtube fs-5"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset" title="Discord">
+                            <i class="bi bi-discord fs-5"></i>
+                        </a>
+                        <a href="#" class="me-4 text-reset" title="GitHub">
+                            <i class="bi bi-github fs-5"></i>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="">
+                    <div class="container text-center text-md-start mt-5">
+                        <div class="row mt-3">
+                            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    <i class="fas fa-gem me-3"></i>Рай от уточки
+                                </h6>
+                                <p>
+                                    https://vk.ru/Ytochka
+                                </p>
+                            </div>
+
+                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">Карта сайта</h6>
+                                <p><a href="#home" class="text-reset">Главная</a></p>
+                                <p><a href="#about" class="text-reset">Помещения</a></p>
+                                <p><a href="#products" class="text-reset">Преимущества</a></p>
+                                <p><a href="#services" class="text-reset">Отзывы</a></p>
+                                <p><a href="#contacts" class="text-reset">Контакты</a></p>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                                <h6 class="text-uppercase fw-bold mb-4">Контакты</h6>
+                                <p><i class="fas fa-home me-3"></i>Челябинск</p>
+                                <p>
+                                    <i class="fas fa-envelope me-3"></i>
+                                    уточка@gmail.com
+                                </p>
+                                <p><i class="fas fa-phone me-3"></i>+7 982 344 67 15</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                    © 2026 Авторское право:
+                    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">Ytochka.COM</a>
+                </div>
+            </footer>
+
+            <!--Темы---------------------------------------------------------------------------------------------------------------------------------------------------->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
